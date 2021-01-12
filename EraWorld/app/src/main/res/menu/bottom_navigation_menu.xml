@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/feed_dest"
+        android:enabled="true"
+        android:icon="@drawable/ic_home"
+        android:title="@string/feed"/>
+    <item
+        android:id="@+id/news_dest"
+        android:enabled="true"
+        android:icon="@drawable/news"
+        android:title="@string/news"/>
+    <item
+        android:id="@+id/mcq_dest"
+        android:enabled="true"
+        android:icon="@drawable/ic_mcq"
+        android:title="@string/mcq"/>
+    <item
+        android:id="@+id/material_dest"
+        android:enabled="true"
+        android:icon="@drawable/ic_material"
+        android:title="@string/materials"/>
+    <item
+        android:id="@+id/more_dest"
+        android:enabled="true"
+        android:icon="@drawable/ic_more_two"
+        android:title="@string/more" />
+</menu>
+<!--
+
+<item
+android:id="@+id/my_profile_dest"
+android:enabled="true"
+android:icon="@drawable/ic_profile"
+android:title="@string/profile"/>-->

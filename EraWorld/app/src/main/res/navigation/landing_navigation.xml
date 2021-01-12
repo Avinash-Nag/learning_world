@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/feed_dest">
+
+
+    <fragment
+        android:id="@+id/feed_dest"
+        android:name="com.kktheavi.eraworld.landing.fragments.FeedsFragment"
+        tools:layout="@layout/fragment_feeds">
+        <!--<action
+            android:id="@+id/register_action"
+            app:destination="@+id/register_frag" />
+        <action
+            android:id="@+id/forget_action"
+            app:destination="@+id/forget_frag" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/news_dest"
+        android:name="com.kktheavi.eraworld.landing.fragments.NewsFragment"
+        tools:layout="@layout/fragment_news">
+        <!-- <action
+             android:id="@+id/login_action"
+             app:destination="@+id/login_frag" />-->
+    </fragment>
+    <fragment
+        android:id="@+id/mcq_dest"
+        android:name="com.kktheavi.eraworld.landing.fragments.McqFragment"
+        tools:layout="@layout/fragment_mcq">
+        <!--<action
+            android:id="@+id/otp_action"
+            app:destination="@+id/otp_frag" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/material_dest"
+        android:name="com.kktheavi.eraworld.landing.fragments.MaterialFragment"
+        tools:layout="@layout/fragment_material">
+        <!--   <action
+               android:id="@+id/otp_login_action"
+               app:destination="@+id/login_frag" />-->
+    </fragment>
+
+
+</navigation>

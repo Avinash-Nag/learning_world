@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/login_frag">
+
+
+    <fragment
+        android:id="@+id/login_frag"
+        android:name="com.kktheavi.eraworld.auth.fragments.LoginFragment"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/register_action"
+            app:destination="@+id/register_frag" />
+        <action
+            android:id="@+id/forget_action"
+            app:destination="@+id/forget_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/register_frag"
+        android:name="com.kktheavi.eraworld.auth.fragments.RegistrationFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/login_action"
+            app:destination="@+id/login_frag" />
+    </fragment>
+    <fragment
+        android:id="@+id/forget_frag"
+        android:name="com.kktheavi.eraworld.auth.fragments.ForgetPasswordFragment"
+        tools:layout="@layout/fragment_forget">
+        <action
+            android:id="@+id/otp_action"
+            app:destination="@+id/otp_frag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/otp_frag"
+        android:name="com.kktheavi.eraworld.auth.fragments.OTPFragment"
+        tools:layout="@layout/fragment_otp">
+        <action
+            android:id="@+id/otp_login_action"
+            app:destination="@+id/login_frag" />
+    </fragment>
+
+</navigation>
